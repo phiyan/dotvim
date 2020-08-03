@@ -20,14 +20,12 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mbbill/undotree'
 Plug 'haya14busa/incsearch.vim'
-Plug 'mhinz/vim-grepper'  " instead of Ack
 Plug 'easymotion/vim-easymotion'
 
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rhubarb'
 
 " Plug emmet, not sure to include
-" easymotions
 " markdown
 " supertab
 " auto-pairs
@@ -39,15 +37,31 @@ Plug 'altercation/vim-colors-solarized'
 " Plug 'austintaylor/vim-indentobject'
 " Plug 'michaeljsmith/vim-indent-object'
 
-Plug 'sirver/ultisnips'
+" Plug 'sirver/ultisnips'
 
+" Ctags!
+Plug 'ludovicchabant/vim-gutentags'
 " keep only if i finish out ctags - Plug 'majutsushi/tagbar'
 
+
 Plug 'tpope/vim-commentary'
+
+" Multiple cursors like Sublime
+Plug 'terryma/vim-multiple-cursors'
+
+" autocomplete
+" if has('nvim')
+"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   Plug 'Shougo/deoplete.nvim'
+"   Plug 'roxma/nvim-yarp'
+"   Plug 'roxma/vim-hug-neovim-rpc'
+" endif
+" let g:deoplete#enable_at_startup = 1
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Ruby/Rails
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
-
